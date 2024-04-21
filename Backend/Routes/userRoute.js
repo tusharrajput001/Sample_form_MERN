@@ -20,11 +20,13 @@ router.get("/", async (req, res) => {
 
 
 router.post("/", async(req,res) => {
-  const {name,age} = req.body;
+  const {name,age,phone,add} = req.body;
   try{
     const userAdded = await User.create({
       name:name,
       age:age,
+      phone:phone,
+      add:add,
     });
 
     res.status(201).json(userAdded);

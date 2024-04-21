@@ -3,9 +3,9 @@ import "./Submit.css"
 
 function Submitted() {
   return (
-    <div id="wrapper" class="animated zoomIn">
+    <div id="wrapper" className="animated zoomIn">
       <h1>
-        <underline>Thank you!</underline>
+        Thank you!
       </h1>
       <h3>
        FORM SUBMITTED
